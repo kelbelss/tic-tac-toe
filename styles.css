@@ -1,0 +1,46 @@
+body {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.headingBlock {
+    background-color: aliceblue;
+    color: black;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.heading {
+    color: purple;
+    text-align: center;
+}
+
+.buttons {
+    width: 279px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: aliceblue;
+    border: none;
+    color: cyan;
+    font-size: 40px;
+    width: 85px;
+    height: 85px;
+    border-radius: 25px;
+    margin: 4px;
+}
+
+.board {
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+    padding: 20px;
+    border-radius: 10px;
+}
