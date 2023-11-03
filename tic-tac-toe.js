@@ -10,3 +10,16 @@ function play(button) {
 }
 
 buttons.forEach(button => button.addEventListener('click', () => play(button)))
+
+// TODO:
+
+// 
+
+// function restart(button) {
+//     const value = button.textContent
+//     if (value === "RESTART") {
+//         button.textContent = button
+//     }
+// }
+
+// button.forEach(button => button.addEventListener('click', () => restart(button)))
