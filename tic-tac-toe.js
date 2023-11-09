@@ -1,4 +1,14 @@
 const buttons = document.querySelectorAll('button')
+const reButton = document.querySelectorAll('#restartButton')
+const buttonOne = document.querySelectorAll('#button1')
+const buttonTwo = document.querySelectorAll('#button2')
+const buttonThree = document.querySelectorAll('#button3')
+const buttonFour = document.querySelectorAll('#button4')
+
+
+
+
+console.log();
 
 function play(button) {
     const value = button.textContent
@@ -7,19 +17,49 @@ function play(button) {
     } else if (value === "-") {
         button.textContent = 'O'
     }
-}
+};
 
 buttons.forEach(button => button.addEventListener('click', () => play(button)))
 
 // TODO:
 
-// 
+// 1. Get restart button to clear
 
-// function restart(button) {
-//     const value = button.textContent
-//     if (value === "RESTART") {
-//         button.textContent = button
-//     }
+function restart(restartButton, buttons) {
+    if (restartButton.textContent === "RESTART") {
+        buttons.forEach(button => {
+        button.textContent = null;
+        restartButton.textContent = "RESTART";
+    });
+    }
+};
+
+// 2. Initialise back to start of game
+
+reButton.forEach(restartButton => restartButton.addEventListener('click', () => restart(restartButton, buttons)))
+
+
+// 3. Take turns
+
+// function turns(buttons) {
+
 // }
 
-// button.forEach(button => button.addEventListener('click', () => restart(button)))
+
+
+// 4. display whose turn it is - using hidden tags
+
+
+// 5. Check for winner 
+
+// function winner(button1, button2, button3, buttons) {
+
+//     if (button1 === "O" && button2 === "O" && button3 === "O") {
+//         buttons.forEach(button => {
+//         button.textContent = "WIN";
+//         });
+//     }
+
+// };
+
+// buttons.forEach(button => button.addEventListener('click', () => winner(buttonOne, buttonTwo, buttonThree, buttons)));
