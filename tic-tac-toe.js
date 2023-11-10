@@ -1,42 +1,70 @@
-const buttons = document.querySelectorAll('button')
-const reButton = document.querySelectorAll('#restartButton')
-const buttonOne = document.querySelectorAll('#button1')
-const buttonTwo = document.querySelectorAll('#button2')
-const buttonThree = document.querySelectorAll('#button3')
-const buttonFour = document.querySelectorAll('#button4')
+const buttons = document.querySelectorAll(' #board button');
+const reButton = document.getElementById('restartButton');
+
+let currentPlayer = 'X';
 
 
 
 
-console.log();
+// console.log();
 
-function play(button) {
-    const value = button.textContent
-    if (value === ".") {
-        button.textContent = 'X'
-    } else if (value === "-") {
-        button.textContent = 'O'
-    }
-};
+// function play(button) {
+//     const value = button.textContent
+//     if (value === ".") {
+//         button.textContent = 'X'
+//     } else if (value === "-") {
+//         button.textContent = 'O'
+//     }
+// };
 
-buttons.forEach(button => button.addEventListener('click', () => play(button)))
+// buttons.forEach(button => button.addEventListener('click', () => play(button)))
 
 // TODO:
 
 // 1. Get restart button to clear
 
-function restart(restartButton, buttons) {
-    if (restartButton.textContent === "RESTART") {
-        buttons.forEach(button => {
-        button.textContent = null;
-        restartButton.textContent = "RESTART";
-    });
-    }
-};
+// function restart(restartButton, buttons) {
+//     if (restartButton.textContent === "RESTART") {
+//         buttons.forEach(button => {
+//         button.textContent = null;
+//         restartButton.textContent = "RESTART";
+//     });
+//     }
+// };
+
+// reButton.forEach(restartButton => restartButton.addEventListener('click', () => restart(restartButton, buttons)))
 
 // 2. Initialise back to start of game
 
-reButton.forEach(restartButton => restartButton.addEventListener('click', () => restart(restartButton, buttons)))
+function initialiseGame() {
+    buttons.forEach(button => {
+        buttons.textContent = '';
+        button.addEventListener('click', handleButtonClick);
+    });
+    currentPlayer = 'X';
+}
+
+// Event listener for player moves
+
+function handleButtonClick() {
+    if (this.textContent === '') {
+        this.textContent = currentPlayer;
+    checkGameStatus();
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+    }
+}
+
+// Check game status
+
+function checkGameStatus() {
+
+
+}
+
+
+reButton.addEventListener('click', initialiseGame);
+initialiseGame();
+
 
 
 // 3. Take turns
