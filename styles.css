@@ -1,22 +1,23 @@
 body {
-    background-color: rgb(253, 212, 234);
+    background: linear-gradient(180deg, rgb(253, 212, 234), rgb(242, 130, 190));
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .headingBlock {
-    background-color: rgb(253, 212, 234);
-    color: black;
+    background-color: transparent;
     padding: 0px;
     border-radius: 10px;
-    margin-top: 200px;
+    margin-top: 60px;
+    margin-bottom: 115px;
 }
 
 .heading {
     color: rgb(216, 37, 213);
     text-align: center;
+    font-size: 40px;
 }
 
 .turnBlock {
@@ -33,7 +34,7 @@ body {
 }
 
 button {
-    background-color: aliceblue;
+    background: aliceblue;
     border: none;
     color: rgb(216, 37, 213);
     font-size: 40px;
@@ -45,6 +46,7 @@ button {
 
 button:hover {
     background-color: rgb(234, 149, 233);
+    cursor: pointer;
 }
 
 .board {
@@ -56,15 +58,15 @@ button:hover {
 }
 
 #restartButton {
-    /* width: 270px;  */
     width: 100px;
     font-size: 15px;
-    height: 35px;
+    height: 32px;
     border-radius: 8px;
 }
 
 #restartButton:hover {
-    background-color: rgb(234, 149, 233);
+    background-color: rgb(253, 212, 234);
+    cursor: pointer;
 }
 
 .restart {
