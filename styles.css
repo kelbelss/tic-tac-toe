@@ -73,3 +73,15 @@ button:hover {
     text-align: center;
 }
 
+.score {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+    background-color: aqua;
+    border-radius:10px;
+    font-size: 18px;
+}
+
+
+

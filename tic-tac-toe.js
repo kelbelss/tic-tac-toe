@@ -26,27 +26,28 @@ function play(e) {
     }
     
 }
-
+start();
 tiles.forEach(tile => tile.addEventListener('click', e => play(e)))
 
 
 // TODO:
 
 // 1. Initialise start of game
-// commentBlock.textContent = "Player 1's turn"
 
+function start() {
+    commentBlock.textContent = "Player 1's turn"
 
-// 2. Get restart button to clear
-// function restart() {
-//     if (reButton.textContent === "RESTART") {
-//         tiles.forEach(tiles => {
-//         tiles.textContent = '';
-//         // reButton.textContent = "RESTART";
-//     });
-//     }
-// }
+    console.log(reButton);
 
-// reButton.forEach(reButton => reButton.addEventListener('click', () => restart()))
+    if (reButton.textContent == "RESTART") {
+        tiles.forEach(tile => {
+            tile.textContent = '';
+        })
+    }
+}
+
+reButton.addEventListener('click', start);
+
 
 
 // 3. Check for winner
