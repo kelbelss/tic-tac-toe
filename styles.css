@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(180deg, rgb(253, 212, 234), rgb(242, 130, 190));
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +10,7 @@ body {
     background-color: transparent;
     padding: 0px;
     border-radius: 10px;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 115px;
 }
 
@@ -22,7 +22,8 @@ body {
 
 .turnBlock {
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .buttons {
@@ -45,7 +46,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(234, 149, 233);
+    background-color: rgb(163, 255, 255);
     cursor: pointer;
 }
 
@@ -55,13 +56,15 @@ button:hover {
     background-color: cyan;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 5px 5px 20px 0px rgb(35, 192, 227);
 }
 
 #restartButton {
-    width: 100px;
-    font-size: 15px;
-    height: 32px;
+    width: 120px;
+    font-size: 18px;
+    height: 38px;
     border-radius: 8px;
+    font-family: "Poppins";
 }
 
 #restartButton:hover {
@@ -81,7 +84,15 @@ button:hover {
     background-color: aqua;
     border-radius:10px;
     font-size: 18px;
+    height: 62px;
+    box-shadow: 5px 5px 20px 0px rgb(35, 192, 227);
 }
 
+.scoreNumber {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+}
 
 
