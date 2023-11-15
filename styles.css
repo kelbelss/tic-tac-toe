@@ -102,11 +102,15 @@ button:hover {
 /* Media queries for smaller screens */
 @media only screen and (max-width: 600px) {
     .heading {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .turnBlock {
         font-size: 0.8em;
+    }
+
+    .buttons {
+        width: 10.8em;
     }
 
     button {
@@ -124,6 +128,6 @@ button:hover {
 
     .score {
         font-size: 0.8em;
-        height: 2.5em;
+        height: 3.5em;
     }
 }
