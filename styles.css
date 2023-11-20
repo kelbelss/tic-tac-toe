@@ -18,7 +18,7 @@ body {
 }
 
 .heading {
-    color: rgb(216, 37, 213);
+    color: rgb(218, 37, 215);
     text-align: center;
     font-size: 40px;
 }
@@ -84,7 +84,7 @@ button:hover {
     flex-wrap: wrap; 
     justify-content: space-around;
     align-items: center;
-    background-color: aqua;
+    background-color: cyan;
     border-radius:10px;
     font-size: 18px;
     height: 62px;
